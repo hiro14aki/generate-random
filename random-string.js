@@ -1,4 +1,13 @@
-const count = process.argv[2];
+const { program } = require("commander");
+program
+  .option("-d, --digit <digit>", "generate digit")
+  .option("-c, --count <count>", "generate count")
+  .parse(process.argv);
+
+if (program.rawArgs.length === 2) {
+  program.help();
+  exit;
+}
 
 const randomString = (len, charSet) => {
   charSet =
@@ -11,6 +20,6 @@ const randomString = (len, charSet) => {
   return randomString;
 };
 
-for (i = 0; i < count; i++) {
-  console.log(randomString(8, "0123456789"));
+for (i = 0; i < program.count; i++) {
+  console.log(randomString(program.digit, "0123456789"));
 }

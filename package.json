@@ -1,0 +1,23 @@
+{
+  "name": "generate-random",
+  "version": "1.0.0",
+  "description": "",
+  "main": "random-crypto.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiro14aki/generate-random.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hiro14aki/generate-random/issues"
+  },
+  "homepage": "https://github.com/hiro14aki/generate-random#readme",
+  "dependencies": {
+    "commander": "^5.1.0"
+  }
+}
