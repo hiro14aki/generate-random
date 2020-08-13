@@ -1,4 +1,5 @@
 const { program } = require("commander");
+
 program
   .option("-d, --digit <digit>", "generate digit")
   .option("-c, --count <count>", "generate count")
